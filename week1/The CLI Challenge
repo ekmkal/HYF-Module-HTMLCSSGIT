@@ -1,0 +1,8 @@
+1. to create a hidden file: touch .filename
+   to create a hidden folder: mkdir.foldername
+   to display hidden files or folders: ls -a
+
+2. mkdir -p folder1/folder2/folder3
+
+3. echo 'first message' >> filename
+   echo 'second message' >> filename
