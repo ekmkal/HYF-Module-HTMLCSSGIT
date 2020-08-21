@@ -1,0 +1,381 @@
+@font-face {
+    font-family: 'Baloo Tamma 2';
+    src: local('Baloo Tamma 2 Regular'), local('BalooTamma2-Regular'), url(https://fonts.gstatic.com/s/balootamma2/v1/vEFX2_hCAgcR46PaajtrYlBbf0881_idV7Y.woff2) format('woff2');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo Tamma 2';
+    color: rgb(32, 136, 136);
+}
+
+h1{
+    background: linear-gradient(to right, #8484a8, #c5c5f5);
+    color: rgb(143, 61, 92);
+    text-align: center;
+    margin: 15px 0px;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+h2{
+    color: rgb(143, 61, 92);
+    background-color: rgb(240, 236, 236);
+    height: 50px;
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 2rem;
+}
+
+h3{
+    margin-top: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    color: rgb(1, 80, 80);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 100vw;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    width: 90%;
+    margin: auto;
+}
+
+#grid-floats .grid-item{
+    background-color: rgb(255, 255, 255);
+    float: left;
+    width: 23%;
+    height: 620px;
+    margin: 10px 1%;
+    position: relative;
+}
+
+#grid-floats .grid-item:first-child{
+    width: 48%;
+    font-size: 1.5em;
+}
+
+#grid-floats .grid-item:first-child img{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    right: 30%;
+    transition: all 1s;
+}
+
+#grid-floats .grid-item:first-child img:hover{
+    width: 50%;
+    height: auto;
+    top: 7%;
+    left: 25%;
+    right: 25%;
+}
+
+#grid-floats img{
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    right: 15%;
+    transition: all 1s;
+}
+
+#grid-floats img:hover{
+    width: 85%;
+    height: auto;
+    top: 8%;
+    left: 5%;
+    right: 5%;
+}
+
+#grid-floats p{
+    width: 90%;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    right: 5%;
+    text-align: justify;
+}
+
+#grid-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#grid-flex .grid-item{
+    background-color: rgb(255, 255, 255);
+    width: 23%;
+    height: 620px;
+    margin: 10px 1%;
+    position: relative;
+}
+
+#grid-flex .grid-item:first-child{
+    width: 48%;
+    font-size: 1.5em;
+}
+
+#grid-flex .grid-item:first-child img{
+    width: 40%;
+    height: auto;
+    left: 30%;
+    right: 30%;
+}
+
+#grid-flex .grid-item:first-child img:hover{
+    width: 50%;
+    height: auto;
+    top: 7%;
+    left: 25%;
+    right: 25%;
+}
+
+#grid-flex img{
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    right: 15%;
+    transition: all 1s;
+}
+
+#grid-flex img:hover{
+    width: 85%;
+    height: auto;
+    top: 8%;
+    left: 5%;
+    right: 5%;
+}
+
+#grid-flex p{
+    width: 90%;
+    position: absolute;
+    top: 43%;
+    left: 5%;
+    right: 5%;
+    text-align: justify;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    #grid-floats .grid-item{
+        width: 31.3%;
+        height: 630px;
+    }
+
+    #grid-floats .grid-item:first-child{
+        font-size: 1.25rem;
+    }
+
+    #grid-floats .grid-item:first-child img{
+        width: 60%;
+        top: 20%;
+        left: 20%;
+        right: 20%;
+    }
+
+    #grid-floats .grid-item:first-child img:hover{
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+
+    #grid-floats .grid-item:first-child p{
+        top: 55%;
+    }
+
+    #grid-floats .grid-item:nth-child(2){
+        width: 48%;
+        font-size: 1.25rem;
+    }
+
+    #grid-floats .grid-item:nth-child(2) img{
+        width: 60%;
+        height: auto;
+        top: 20%;
+        left: 20%;
+        right: 20%;
+    }
+
+    #grid-floats .grid-item:nth-child(2) img:hover{
+        width: 80%;
+        height: auto;
+        top: 7%;
+        left: 10%;
+        right: 10%;
+    }
+
+    #grid-floats .grid-item:nth-child(2) p{
+        top: 55%;
+    }
+
+    #grid-flex .grid-item{
+        width: 31.3%;
+        height: 630px;
+    }
+
+    #grid-flex .grid-item:first-child{
+        font-size: 1.25rem;
+    }
+
+    #grid-flex .grid-item:first-child img{
+        width: 60%;
+        top: 20%;
+        left: 20%;
+        right: 20%;
+    }
+
+    #grid-flex .grid-item:first-child img:hover{
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+
+    #grid-flex .grid-item:first-child p{
+        top: 55%;
+    }
+
+    #grid-flex .grid-item:nth-child(2){
+        width: 48%;
+        font-size: 1.25rem;
+    }
+
+    #grid-flex .grid-item:nth-child(2) img{
+        width: 60%;
+        height: auto;
+        top: 20%;
+        left: 20%;
+        right: 20%;
+    }
+
+    #grid-flex .grid-item:nth-child(2) img:hover{
+        width: 80%;
+        height: auto;
+        top: 7%;
+        left: 10%;
+        right: 10%;
+    }
+
+    #grid-flex .grid-item:nth-child(2) p{
+        top: 55%;
+    }    
+}
+
+@media screen and (max-width: 600px){
+    #grid-floats .grid-item{
+        width: 100%;
+        height: fit-content;
+        margin: 10px 10px;
+    }
+
+    #grid-floats .grid-item img{
+        width: 50%;
+        height: auto;
+        position: unset;
+        display: block;
+        margin: 10px auto;
+    }
+
+    #grid-floats .grid-item img:hover{
+        width: 75%;
+    }
+
+    #grid-floats .grid-item p{
+        width: 80%;
+        margin: 10px auto;
+        position: unset;
+    }
+
+    #grid-floats .grid-item:first-child{
+        font-size: unset;
+        width: 100%;
+        height: fit-content;
+        margin: 10px 10px;
+    }
+
+    #grid-floats .grid-item:first-child img{
+        width: 50%;
+        height: auto;
+        position: unset;
+        display: block;
+        margin: 10px auto;
+    }
+
+    #grid-floats .grid-item:first-child img:hover{
+        width: 75%;
+    }
+
+    #grid-floats .grid-item:first-child p{
+        width: 80%;
+        margin: 10px auto;
+        position: unset;
+    }
+
+    #grid-flex .grid-item{
+        width: 100%;
+        height: fit-content;
+        margin: 10px 10px;
+    }
+
+    #grid-flex .grid-item img{
+        width: 50%;
+        height: auto;
+        position: unset;
+        display: block;
+        margin: 10px auto;
+    }
+
+    #grid-flex .grid-item img:hover{
+        width: 75%;
+    }
+
+    #grid-flex .grid-item p{
+        width: 80%;
+        margin: 10px auto;
+        position: unset;
+    }
+
+    #grid-flex .grid-item:first-child{
+        font-size: unset;
+        width: 100%;
+        height: fit-content;
+        margin: 10px 10px;
+    }
+
+    #grid-flex .grid-item:first-child img{
+        width: 50%;
+        height: auto;
+        position: unset;
+        display: block;
+        margin: 10px auto;
+    }
+
+    #grid-flex .grid-item:first-child img:hover{
+        width: 75%;
+    }
+
+    #grid-flex .grid-item:first-child p{
+        width: 80%;
+        margin: 10px auto;
+        position: unset;
+    }
+}
