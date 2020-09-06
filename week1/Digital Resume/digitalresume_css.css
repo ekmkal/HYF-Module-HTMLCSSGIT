@@ -2,14 +2,33 @@
     font-family: 'Lobster';
     src: url('<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">');
 }
+
 html{
     font-family: 'Lobster', cursive;
     background-color: rgb(255, 255, 255);
 }
+
+h1{
+    font-size: 3rem;
+    color: white;
+}
+
+h2{
+    font-size: 2rem;
+    color: white;
+}
+
+h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 body{
     margin: 0;
     padding: 0;
 }
+
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
@@ -19,73 +38,79 @@ body{
     'content content sidebar'
     'leftside middle rightside';
 }
+
 .grid-item-1{
     grid-area: header;
     margin-bottom: 20px;
+    height: 600px;
 }
-#header-image{
+
+.header-image{
     width: 100%;
     height: 75px;
     margin-bottom: 20px;
 }
-h1{
-    float: left;
-    width: 40%;
-    margin: 30px 5% 0px 10%;
-    font-size: 3rem;
+
+.profile-picture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('IMG_5487 copy 2.JPG');
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
-h2{
-    float: left;
-    width: 40%;
-    margin: 30px 5% 0px 10%;
+
+.profile-text{
+    position: absolute;
+    top: 10%;
+    right: 4%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
-#profile-picture{
-    float: right;
-    width: 30%;
-    height: 290px;
-    margin-right: 15%;
-}
+
 .grid-item-2{
     grid-area: content;
     border-right: 4px dotted burlywood;
     padding: 0% 5%;
 }
+
 .grid-item-3{
     grid-area: sidebar;
     display: grid;
 }
-h3{
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: underline;
-}
+
 .inside-grid-1{
     border-bottom: 4px dotted burlywood;
     padding-left: 10%;
 }
+
 .inside-grid-2{
     padding-left: 10%;
 }
+
 .grid-item-4{
     grid-area: leftside;
     border-right: 4px dotted burlywood;
     border-top: 4px dotted burlywood;
     padding-left: 10%;
 }
+
 .grid-item-4 ul{
     list-style-type: square;
 }
+
 .grid-item-5{
     grid-area: middle;
     border-right: 4px dotted burlywood;
     border-top: 4px dotted burlywood;
     padding-left: 10%;
 }
+
 .grid-item-6{
     grid-area: rightside;
     border-top: 4px dotted burlywood;
     padding-left: 10%;
 }
+
 footer{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
